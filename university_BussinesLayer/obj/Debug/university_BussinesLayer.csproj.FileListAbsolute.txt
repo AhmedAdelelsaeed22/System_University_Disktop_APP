@@ -1,0 +1,9 @@
+C:\Users\NV\Desktop\System_University\university_BussinesLayer\bin\Debug\university_BussinesLayer.dll
+C:\Users\NV\Desktop\System_University\university_BussinesLayer\bin\Debug\university_BussinesLayer.pdb
+C:\Users\NV\Desktop\System_University\university_BussinesLayer\bin\Debug\university_AccessDataLayer.dll
+C:\Users\NV\Desktop\System_University\university_BussinesLayer\bin\Debug\university_AccessDataLayer.pdb
+C:\Users\NV\Desktop\System_University\university_BussinesLayer\obj\Debug\university_BussinesLayer.csproj.AssemblyReference.cache
+C:\Users\NV\Desktop\System_University\university_BussinesLayer\obj\Debug\university_BussinesLayer.csproj.CoreCompileInputs.cache
+C:\Users\NV\Desktop\System_University\university_BussinesLayer\obj\Debug\universi.BCB6078F.Up2Date
+C:\Users\NV\Desktop\System_University\university_BussinesLayer\obj\Debug\university_BussinesLayer.dll
+C:\Users\NV\Desktop\System_University\university_BussinesLayer\obj\Debug\university_BussinesLayer.pdb

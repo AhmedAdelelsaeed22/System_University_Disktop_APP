@@ -1,0 +1,6 @@
+C:\Users\NV\Desktop\System_University\university_AccessDataLayer\bin\Debug\university_AccessDataLayer.dll
+C:\Users\NV\Desktop\System_University\university_AccessDataLayer\bin\Debug\university_AccessDataLayer.pdb
+C:\Users\NV\Desktop\System_University\university_AccessDataLayer\obj\Debug\university_AccessDataLayer.csproj.AssemblyReference.cache
+C:\Users\NV\Desktop\System_University\university_AccessDataLayer\obj\Debug\university_AccessDataLayer.csproj.CoreCompileInputs.cache
+C:\Users\NV\Desktop\System_University\university_AccessDataLayer\obj\Debug\university_AccessDataLayer.dll
+C:\Users\NV\Desktop\System_University\university_AccessDataLayer\obj\Debug\university_AccessDataLayer.pdb

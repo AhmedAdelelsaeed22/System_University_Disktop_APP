@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{85AD56D3-20B3-42F4-B9B7-D731F06A9A6B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>University</RootNamespace>
+    <AssemblyName>University</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Win32.Registry, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccountSettings\ctrlDetailsUserAccount.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AccountSettings\ctrlDetailsUserAccount.Designer.cs">
+      <DependentUpon>ctrlDetailsUserAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AccountSettings\FrmChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccountSettings\FrmChangePassword.Designer.cs">
+      <DependentUpon>FrmChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AccountSettings\ShowUserAccountDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccountSettings\ShowUserAccountDetails.Designer.cs">
+      <DependentUpon>ShowUserAccountDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Courses\ctrlAddorEditCourse.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Courses\ctrlAddorEditCourse.Designer.cs">
+      <DependentUpon>ctrlAddorEditCourse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Courses\ctrlShowDetailsCourse.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Courses\ctrlShowDetailsCourse.Designer.cs">
+      <DependentUpon>ctrlShowDetailsCourse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Courses\FrmAddorEditCourse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Courses\FrmAddorEditCourse.Designer.cs">
+      <DependentUpon>FrmAddorEditCourse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Courses\FrmDetailsCourse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Courses\FrmDetailsCourse.Designer.cs">
+      <DependentUpon>FrmDetailsCourse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Courses\FrmManagementCourses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Courses\FrmManagementCourses.Designer.cs">
+      <DependentUpon>FrmManagementCourses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Department\FrmAddorEditDepartment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Department\FrmAddorEditDepartment.Designer.cs">
+      <DependentUpon>FrmAddorEditDepartment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Department\FrmManagmentDepartment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Department\FrmManagmentDepartment.Designer.cs">
+      <DependentUpon>FrmManagmentDepartment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Department\FrmShowDetailsDepartment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Department\FrmShowDetailsDepartment.Designer.cs">
+      <DependentUpon>FrmShowDetailsDepartment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Enrollment\Attendance\AddorEditAttendance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Enrollment\Attendance\AddorEditAttendance.Designer.cs">
+      <DependentUpon>AddorEditAttendance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Enrollment\Attendance\FrmManagmentAttendance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Enrollment\Attendance\FrmManagmentAttendance.Designer.cs">
+      <DependentUpon>FrmManagmentAttendance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Enrollment\Attendance\FrmShowAttendanceDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Enrollment\Attendance\FrmShowAttendanceDetails.Designer.cs">
+      <DependentUpon>FrmShowAttendanceDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Enrollment\cbCourseName.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Enrollment\cbCourseName.Designer.cs">
+      <DependentUpon>cbCourseName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Enrollment\ctrlAddNewEnrollment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Enrollment\ctrlAddNewEnrollment.Designer.cs">
+      <DependentUpon>ctrlAddNewEnrollment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Enrollment\FrmAddorEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Enrollment\FrmAddorEdit.Designer.cs">
+      <DependentUpon>FrmAddorEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Enrollment\FrmShowDetailsEnroll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Enrollment\FrmShowDetailsEnroll.Designer.cs">
+      <DependentUpon>FrmShowDetailsEnroll.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Enrollment\Grades\FrmAddorEditGrades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Enrollment\Grades\FrmAddorEditGrades.Designer.cs">
+      <DependentUpon>FrmAddorEditGrades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Enrollment\Grades\FrmManagementGrades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Enrollment\Grades\FrmManagementGrades.Designer.cs">
+      <DependentUpon>FrmManagementGrades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Enrollment\Grades\FrmShowGradeDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Enrollment\Grades\FrmShowGradeDetails.Designer.cs">
+      <DependentUpon>FrmShowGradeDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Enrollment\InstructorEnrollments\FrmAddNewInstructorEnrollment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Enrollment\InstructorEnrollments\FrmAddNewInstructorEnrollment.Designer.cs">
+      <DependentUpon>FrmAddNewInstructorEnrollment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Enrollment\InstructorEnrollments\FrmManagementInstructorEnrollments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Enrollment\InstructorEnrollments\FrmManagementInstructorEnrollments.Designer.cs">
+      <DependentUpon>FrmManagementInstructorEnrollments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Enrollment\InstructorEnrollments\FrmShowInstrctorEnrollment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Enrollment\InstructorEnrollments\FrmShowInstrctorEnrollment.Designer.cs">
+      <DependentUpon>FrmShowInstrctorEnrollment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Enrollment\ManagementEnrollments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Enrollment\ManagementEnrollments.Designer.cs">
+      <DependentUpon>ManagementEnrollments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Events\SendPersonIDEventAgs.cs" />
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Instractors\ctrlAddorEditInstructor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Instractors\ctrlAddorEditInstructor.Designer.cs">
+      <DependentUpon>ctrlAddorEditInstructor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Instractors\ctrlShowInstructotDetails.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Instractors\ctrlShowInstructotDetails.Designer.cs">
+      <DependentUpon>ctrlShowInstructotDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Instractors\CustomDepartmentName.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Instractors\CustomDepartmentName.Designer.cs">
+      <DependentUpon>CustomDepartmentName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Instractors\FrmAddorEditInstructor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Instractors\FrmAddorEditInstructor.Designer.cs">
+      <DependentUpon>FrmAddorEditInstructor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Instractors\FrmShowInstructorDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Instractors\FrmShowInstructorDetails.Designer.cs">
+      <DependentUpon>FrmShowInstructorDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Instractors\ManagementInstractors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Instractors\ManagementInstractors.Designer.cs">
+      <DependentUpon>ManagementInstractors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LogIn\Frmlogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogIn\Frmlogin.Designer.cs">
+      <DependentUpon>Frmlogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Person\ctrlAddorEditPerson.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Person\ctrlAddorEditPerson.Designer.cs">
+      <DependentUpon>ctrlAddorEditPerson.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Person\FrmAddOrEditPersonInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Person\FrmAddOrEditPersonInfo.Designer.cs">
+      <DependentUpon>FrmAddOrEditPersonInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Students\ctrlAddOrEditStudent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Students\ctrlAddOrEditStudent.Designer.cs">
+      <DependentUpon>ctrlAddOrEditStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Students\ctrlShowDetailsStudents.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Students\ctrlShowDetailsStudents.Designer.cs">
+      <DependentUpon>ctrlShowDetailsStudents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Students\FrmAddOrEditStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Students\FrmAddOrEditStudent.Designer.cs">
+      <DependentUpon>FrmAddOrEditStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Students\FrmShowDetailsStudents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Students\FrmShowDetailsStudents.Designer.cs">
+      <DependentUpon>FrmShowDetailsStudents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Students\FrmStudents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Students\FrmStudents.Designer.cs">
+      <DependentUpon>FrmStudents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\ctrlAddorEditUsers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Users\ctrlAddorEditUsers.Designer.cs">
+      <DependentUpon>ctrlAddorEditUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\ctrlShowDetailsUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Users\ctrlShowDetailsUser.Designer.cs">
+      <DependentUpon>ctrlShowDetailsUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\FrmAddorEditUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\FrmAddorEditUsers.Designer.cs">
+      <DependentUpon>FrmAddorEditUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\FrmManagementUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\FrmManagementUsers.Designer.cs">
+      <DependentUpon>FrmManagementUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\FrmShowDetailsUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\FrmShowDetailsUsers.Designer.cs">
+      <DependentUpon>FrmShowDetailsUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="utilities\clsUtilities.cs" />
+    <EmbeddedResource Include="AccountSettings\ctrlDetailsUserAccount.resx">
+      <DependentUpon>ctrlDetailsUserAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccountSettings\FrmChangePassword.resx">
+      <DependentUpon>FrmChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccountSettings\ShowUserAccountDetails.resx">
+      <DependentUpon>ShowUserAccountDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Courses\ctrlAddorEditCourse.resx">
+      <DependentUpon>ctrlAddorEditCourse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Courses\ctrlShowDetailsCourse.resx">
+      <DependentUpon>ctrlShowDetailsCourse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Courses\FrmAddorEditCourse.resx">
+      <DependentUpon>FrmAddorEditCourse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Courses\FrmDetailsCourse.resx">
+      <DependentUpon>FrmDetailsCourse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Courses\FrmManagementCourses.resx">
+      <DependentUpon>FrmManagementCourses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Department\FrmAddorEditDepartment.resx">
+      <DependentUpon>FrmAddorEditDepartment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Department\FrmManagmentDepartment.resx">
+      <DependentUpon>FrmManagmentDepartment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Department\FrmShowDetailsDepartment.resx">
+      <DependentUpon>FrmShowDetailsDepartment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Enrollment\Attendance\AddorEditAttendance.resx">
+      <DependentUpon>AddorEditAttendance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Enrollment\Attendance\FrmManagmentAttendance.resx">
+      <DependentUpon>FrmManagmentAttendance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Enrollment\Attendance\FrmShowAttendanceDetails.resx">
+      <DependentUpon>FrmShowAttendanceDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Enrollment\ctrlAddNewEnrollment.resx">
+      <DependentUpon>ctrlAddNewEnrollment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Enrollment\FrmAddorEdit.resx">
+      <DependentUpon>FrmAddorEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Enrollment\FrmShowDetailsEnroll.resx">
+      <DependentUpon>FrmShowDetailsEnroll.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Enrollment\Grades\FrmAddorEditGrades.resx">
+      <DependentUpon>FrmAddorEditGrades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Enrollment\Grades\FrmManagementGrades.resx">
+      <DependentUpon>FrmManagementGrades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Enrollment\Grades\FrmShowGradeDetails.resx">
+      <DependentUpon>FrmShowGradeDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Enrollment\InstructorEnrollments\FrmAddNewInstructorEnrollment.resx">
+      <DependentUpon>FrmAddNewInstructorEnrollment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Enrollment\InstructorEnrollments\FrmManagementInstructorEnrollments.resx">
+      <DependentUpon>FrmManagementInstructorEnrollments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Enrollment\InstructorEnrollments\FrmShowInstrctorEnrollment.resx">
+      <DependentUpon>FrmShowInstrctorEnrollment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Enrollment\ManagementEnrollments.resx">
+      <DependentUpon>ManagementEnrollments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Instractors\ctrlAddorEditInstructor.resx">
+      <DependentUpon>ctrlAddorEditInstructor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Instractors\ctrlShowInstructotDetails.resx">
+      <DependentUpon>ctrlShowInstructotDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Instractors\FrmAddorEditInstructor.resx">
+      <DependentUpon>FrmAddorEditInstructor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Instractors\FrmShowInstructorDetails.resx">
+      <DependentUpon>FrmShowInstructorDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Instractors\ManagementInstractors.resx">
+      <DependentUpon>ManagementInstractors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogIn\Frmlogin.resx">
+      <DependentUpon>Frmlogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Person\ctrlAddorEditPerson.resx">
+      <DependentUpon>ctrlAddorEditPerson.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Person\FrmAddOrEditPersonInfo.resx">
+      <DependentUpon>FrmAddOrEditPersonInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Students\ctrlAddOrEditStudent.resx">
+      <DependentUpon>ctrlAddOrEditStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Students\ctrlShowDetailsStudents.resx">
+      <DependentUpon>ctrlShowDetailsStudents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Students\FrmAddOrEditStudent.resx">
+      <DependentUpon>FrmAddOrEditStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Students\FrmShowDetailsStudents.resx">
+      <DependentUpon>FrmShowDetailsStudents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Students\FrmStudents.resx">
+      <DependentUpon>FrmStudents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\ctrlAddorEditUsers.resx">
+      <DependentUpon>ctrlAddorEditUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\ctrlShowDetailsUser.resx">
+      <DependentUpon>ctrlShowDetailsUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\FrmAddorEditUsers.resx">
+      <DependentUpon>FrmAddorEditUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\FrmManagementUsers.resx">
+      <DependentUpon>FrmManagementUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\FrmShowDetailsUsers.resx">
+      <DependentUpon>FrmShowDetailsUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Courses.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Departments.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Enrollment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\instructor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\student.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Users.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\University.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\university_BussinesLayer\university_BussinesLayer.csproj">
+      <Project>{5021c9e9-cd68-4283-a48b-a28a4cd54d9e}</Project>
+      <Name>university_BussinesLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Add_Student.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Delete_Student.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Details_Student.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Edit_Student.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\loginPhoto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Account_Settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\ShowDetailsAcount.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\reset-password.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\All_Enroll_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Attendance.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\grades.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".gitignore" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
